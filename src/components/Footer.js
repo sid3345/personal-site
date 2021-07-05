@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import Social from './Social';
+import {mail, contact} from '../variable'
 
 class Footer extends Component {
     
@@ -18,11 +19,11 @@ class Footer extends Component {
                                     </li>
                                         
                                     <li>
-                                        <p>+90 1234 56789</p>
+                                        <p>{contact}</p>
                                     </li>
                                         
                                     <li>
-                                        <p>info@gmail.com</p>
+                                        <p>{mail}</p>
                                     </li>
                                 </ul>
                             </div>
