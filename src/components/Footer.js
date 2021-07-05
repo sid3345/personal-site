@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Social from './Social';
-import {mail, contact, address} from '../variable'
+import {linkedin, github, instagram, hackerrank, hackerearth, mail, address , contact } from '../variable'
 
 class Footer extends Component {
     
@@ -13,7 +13,7 @@ class Footer extends Component {
                         <div className="row">
                             <div className="col-lg-5 col-md-5 col-sm-4 col-xs-12">
                                 <ul className="adress">
-                                    <span>Adress</span>    
+                                    <span>Address</span>    
                                     <li>
                                         <p>{address}</p>
                                     </li>
@@ -57,23 +57,23 @@ class Footer extends Component {
                                 <ul className="social">
                                 <span>Social</span>    
                                     <li>
-                                    <a href="https://www.hackerrank.com/kevinoberoy98?hr_r=1" target="_blank" rel="noopener noreferrer" ><i className="fab fa-hackerrank" ></i></a>
+                                    <a href={hackerrank ? hackerrank : hackerearth} target="_blank" rel="noopener noreferrer" ><i className="fab fa-hackerrank" ></i></a>
                                     </li>
                                     
                                     <li>
-                                    <a href="https://github.com/aks318" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                                    <a href={github} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                                     </li>
                                         
                                     <li>
-                                    <a href="https://Instagram.com/aksthetic311" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                                    <a href={instagram} target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
                                     </li>
                                     
                                     <li>
-                                    <a href="https://www.linkedin.com/in/aakash333" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+                                    <a href={linkedin} target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
                                     </li>
                                         
                                     <li>
-                                    <a href="https://www.gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-google"></i></a>
+                                    <a href={mail} target="_blank" rel="noopener noreferrer"><i className="fa fa-google"></i></a>
                                     </li>
                         
                                 </ul>
