@@ -26,7 +26,7 @@ class Navbar extends Component {
             <Navitem item="React" tolink="/react"  activec={this.activeitem}></Navitem>
             <Navitem item="Redux" tolink="/redux"  activec={this.activeitem}></Navitem>
             <Navitem item="Javascript" tolink="/javascript"  activec={this.activeitem}></Navitem>
-            <Navitem item="Css" tolink="/css"  activec={this.activeitem}></Navitem>
+            <Navitem item="CSS" tolink="/css"  activec={this.activeitem}></Navitem>
             </ul>
             </nav>
             )
