@@ -94,42 +94,6 @@ h1,h2,h3,h4,p{
   margin: 10px;
 }
 
-.footer{
-  width: auto;
-  height: auto;
-  background: rgb(87, 178, 231);
-
-}
-
-.footer nav
-{
-  display: flex;
-  justify-content: center;
-}
-
-.footer h4{
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  color: rgb(238, 247, 248);
-}
-
-.footer nav ul{
-  font-size: 20px ;
-  text-align: center;
-  list-style-type: none;
-  text-decoration: none;
-  color: white !important;
-  width: auto;
-  height: 20px;
-}
-
-.footer nav ul a
-{
-  margin: 15px 10px 0px 10px;
-}
-
-
 .active
 {
   font-weight: bolder;
@@ -139,6 +103,49 @@ h1,h2,h3,h4,p{
   list-style-type:none;
   margin:30px;
 }
+
+footer{
+   background-color: #33383c;
+   padding:70px 0px;
+}	       
+
+footer ul li{
+  padding:5px 0px;
+}
+
+.adress span , .contact span , .social span{
+ color: #FFF; 
+ font-weight: 800; 
+ padding-bottom: 10px; 
+ margin-bottom: 20px;
+ display: block;
+ text-transform: uppercase;
+ font-size: 20px;
+ letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+  color:#FFF;
+  letter-spacing: 2px;
+  text-decoration:none;
+  font-size:15px;
+}
+
+.social li{
+  float:left;
+  margin-right: 17px;
+}
+
+.adress , .contact , .social {
+  list-style: none;
+}
+
+.fa{
+  color:#9c9c9c;
+  margin-right: 15px;
+  font-size:14px;
+}
+
 
 @media all and (max-width: 450px) {
   :root {
