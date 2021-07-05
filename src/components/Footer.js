@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Social from './Social';
-import {mail, contact} from '../variable'
+import {mail, contact, address} from '../variable'
 
 class Footer extends Component {
     
@@ -15,7 +15,7 @@ class Footer extends Component {
                                 <ul className="adress">
                                     <span>Adress</span>    
                                     <li>
-                                        <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                                        <p>{address}</p>
                                     </li>
                                         
                                     <li>
