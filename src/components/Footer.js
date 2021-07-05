@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Social from './Social';
 import {linkedin, github, instagram, hackerrank, hackerearth, mail, address , contact } from '../variable'
 
 class Footer extends Component {

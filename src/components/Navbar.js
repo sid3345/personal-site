@@ -28,7 +28,7 @@ class Navbar extends Component {
     render() {
         return (
             <nav style= {this.state.checked ? {background: "rgb(153, 204, 255)"}: {background: "rgb(102, 153, 0)"}}>
-            <Switch onColor='#000000' checkedIcon={false} uncheckedIcon={false} onChange={this.mode} checked={this.state.checked} />
+            <Switch className = "Switch" onColor='#000000' checkedIcon={false} uncheckedIcon={false} onChange={this.mode} checked={this.state.checked} />
             <ul>
             <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
             <Navitem item="React" tolink="/react"  activec={this.activeitem}></Navitem>

@@ -10,9 +10,11 @@
 {
   margin:0;
   padding: 0;
+  
 }
 body{
   font-family: 'Raleway';
+  
 }
 .App
 {
@@ -33,6 +35,7 @@ nav
 {
   padding: 100px ;
   background-color: #f4f5f9;
+  min-height: 100vh;
   flex:var(--condiv-flex);
 }
 
@@ -48,12 +51,17 @@ nav
 {
   border-radius: 50%;
   width: 200px;
+  height: 200px;
   margin: 30px;
 }
 .typingeffect
 {
   font-size: var(--typing-font);
   margin-bottom: 30px;
+}
+
+.Switch{
+  margin : 7px 0px 0px 7px
 }
 
 nav ul{
@@ -72,6 +80,7 @@ nav ul{
 nav ul li
 {
   margin: 15px 10px 0px 10px;
+  
 }
 
 a
@@ -81,11 +90,6 @@ a
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
 
-}
-
-.subtopic
-{
-  margin:10px 10px 30px 10px !important;
 }
 p{
   font-size: var(--fontsize-p);
@@ -106,7 +110,7 @@ h1,h2,h3,h4,p{
 
 footer{
    background-color: #33383c;
-   padding:70px 0px;
+   padding:50px 0px;
 }	       
 
 footer ul li{
