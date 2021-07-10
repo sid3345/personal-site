@@ -27,8 +27,21 @@ class Navbar extends Component {
     };
     render() {
         return (
-            <nav style= {this.state.checked ? {background: "rgb(153, 204, 255)"}: {background: "rgb(102, 153, 0)"}}>
-            <Switch className = "Switch" onColor='#000000' checkedIcon={false} uncheckedIcon={false} onChange={this.mode} checked={this.state.checked} />
+            <nav style= {this.state.checked ? this.props.onSwitch : {background: this.props.themes}}>
+            <Switch className = "Switch" onColor="#86d3ff"
+            onHandleColor="#2693e6"
+            handleDiameter={30}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+            height={20}
+            width={48} 
+            onColor='#000000' 
+            checkedIcon={false} 
+            uncheckedIcon={false} 
+            onChange={this.mode} 
+            checked={this.state.checked} />
             <ul>
             <Navitem item="Home" tolink="/"  activec={this.activeitem}></Navitem>
             <Navitem item="React" tolink="/react"  activec={this.activeitem}></Navitem>
