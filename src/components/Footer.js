@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import {linkedin, github, instagram, hackerrank, hackerearth, mail, address , contact } from '../variable'
 
 class Footer extends Component {
+    constructor(props)
+    {
+        super(props);
+    }
+
     
     render() {
         return (
             <div>
-                {/* <Social /> */}
-                <footer>
+                <footer style= {{background: this.props.themes}}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-5 col-md-5 col-sm-4 col-xs-12">
@@ -29,7 +33,7 @@ class Footer extends Component {
                             
                             <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <ul className="contact">
-                                    <span>Contact</span>    
+                                    <span>Links</span>    
                                     <li>
                                         <a href="/">Home</a>
                                     </li>
@@ -40,14 +44,6 @@ class Footer extends Component {
                                         
                                     <li>
                                         <a href="#">Blog</a>
-                                    </li>
-                                        
-                                    <li>
-                                        <a href="#">Gallery </a>
-                                    </li>
-                                        
-                                    <li>
-                                        <a href="#">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -61,10 +57,6 @@ class Footer extends Component {
                                     
                                     <li>
                                     <a href={github} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                                    </li>
-                                        
-                                    <li>
-                                    <a href={instagram} target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
                                     </li>
                                     
                                     <li>
